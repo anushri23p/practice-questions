@@ -32,11 +32,18 @@ const firstCharactersOf = function (strings) {
   });
 };
 
-console.log(firstCharactersOf(["apple", "banana", "kiwi"]));
+// console.log(firstCharactersOf(["apple", "banana", "kiwi"]));
 
 // truth values of [0, 1, 2, 3] => [false, true, true, true]
 // Assume non-zero numbers are true, and zero is false
-const truthValuesOf = function (numbers) { };
+const truthValuesOf = function (numbers) {
+  return numbers.map(function (number) {
+    return number !== 0 ? "true" : "false";
+  });
+};
+
+console.log(truthValuesOf([0, 1, 2, 3, -1]));
+
 
 // reverse strings of ["hello", "world"] => ["olleh", "dlrow"]
 const reversedStringsOf = function (strings) { };
