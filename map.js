@@ -156,12 +156,12 @@ const numberOfVowels = function (word) {
   return word.length;
 };
 
-const filterOnlyVowel = function (character) {
+const isVowel = function (character) {
   return "AEIOUaeiou".includes(character);
 };
 
 const removeConsonants = function (word) {
-  return [...word].filter(filterOnlyVowel).join("");
+  return [...word].filter(isVowel).join("");
 };
 
 const countVowelsOf = function (strings) {
@@ -179,13 +179,30 @@ const reversedArraysOf = function (arrays) {
   });
 };
 
-console.log(reversedArraysOf([[1, 2, 3], [4, 5, 6]]));
+// console.log(reversedArraysOf([[1, 2, 3], [4, 5, 6]]));
 
 
 //-----------------------------------------------------------------------------
 
 // remove vowels from ["apple", "banana", "grape"] => ["ppl", "bnn", "grp"]
-const withoutVowelsOf = function (strings) { };
+
+const invert = function (f) {
+  return function (...args) {
+    return !f(...args);
+  };
+};
+
+const removeVowel = function (word) {
+  const isConsonant = invert(isVowel);
+
+  return [...word].filter(isConsonant).join("");
+};
+
+const withoutVowelsOf = function (strings) {
+  return strings.map(removeVowel);
+};
+
+console.log(withoutVowelsOf(["apple", "banana", "grape"]));
 
 //-----------------------------------------------------------------------------
 
