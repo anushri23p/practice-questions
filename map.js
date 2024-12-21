@@ -100,8 +100,7 @@ const charCodesOf = function (strings) {
   });
 };
 
-console.log(charCodesOf(["a", "b", "c"]));
-
+// console.log(charCodesOf(["a", "b", "c"]));
 
 //-----------------------------------------------------------------------------
 
@@ -113,14 +112,20 @@ const domainNamesOf = function (emails) {
   });
 };
 
-console.log(domainNamesOf(["user1@gmail.com", "admin@yahoo.com"]));
-
+// console.log(domainNamesOf(["user1@gmail.com", "admin@yahoo.com"]));
 
 //-----------------------------------------------------------------------------
 
 // split words in ["hello world", "goodbye moon"] 
 // => [["hello", "world"], ["goodbye", "moon"]]
-const splitWordsOf = function (strings) { };
+const splitWordsOf = function (strings) {
+  return strings.map(function (word) {
+    return word.split(" ");
+  });
+};
+
+console.log(splitWordsOf(["hello world", "goodbye moon"]));
+
 
 //-----------------------------------------------------------------------------
 
