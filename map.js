@@ -146,12 +146,29 @@ const repeatedStringsOf = function (strings) {
   });
 };
 
-console.log(repeatedStringsOf(["hi", "bye"]));
+// console.log(repeatedStringsOf(["hi", "bye"]));
 
 //-----------------------------------------------------------------------------
 
 // count vowels in ["apple", "banana", "grape"] => [2, 3, 2]
-const countVowelsOf = function (strings) { };
+
+const numberOfVowels = function (word) {
+  return word.length;
+};
+
+const filterOnlyVowel = function (character) {
+  return "AEIOUaeiou".includes(character);
+};
+
+const removeConsonants = function (word) {
+  return [...word].filter(filterOnlyVowel).join("");
+};
+
+const countVowelsOf = function (strings) {
+  return strings.map(removeConsonants).map(numberOfVowels);
+};
+
+console.log(countVowelsOf(["apple", "banana", "grape", "jjj"]));
 
 //-----------------------------------------------------------------------------
 
