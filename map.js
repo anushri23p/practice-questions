@@ -294,7 +294,7 @@ const extractNames = function (objects) {
   });
 };
 
-console.log(extractNames([{ name: "Alice" }, { name: "Bob" }]));
+// console.log(extractNames([{ name: "Alice" }, { name: "Bob" }]));
 
 
 //-----------------------------------26-----------------------------------------
@@ -306,14 +306,21 @@ const extractAges = function (objects) {
   });
 };
 
-console.log(extractAges([{ age: 25 }, { age: 30 }]));
+// console.log(extractAges([{ age: 25 }, { age: 30 }]));
 
 
 //-----------------------------------27-----------------------------------------
 
 // extract the first letters of names from [{ name: "Alice" }, { name: "Bob" }]
 //  => ["A", "B"]
-const firstLettersOfNames = function (objects) { };
+const firstLettersOfNames = function (objects) {
+  return objects.map(function (element) {
+    return element.name.at(0);
+  });
+};
+
+console.log(firstLettersOfNames([{ name: "Alice" }, { name: "Bob" }]));
+
 
 //-----------------------------------------------------------------------------
 
