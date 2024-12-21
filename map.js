@@ -7,6 +7,8 @@ const squaresOf = function (numbers) {
 
 // console.log(squaresOf([1, 2, 3, 4]));
 
+//-----------------------------------------------------------------------------
+
 // lengths of ["apple", "banana", "kiwi"] => [5, 6, 4]
 const lengthsOf = function (strings) {
   return strings.map(function (word) {
@@ -15,6 +17,8 @@ const lengthsOf = function (strings) {
 };
 
 // console.log(lengthsOf(["a", "bb", "ccc", "dddd"]));
+
+//-----------------------------------------------------------------------------
 
 // uppercase of ["hello", "world"] => ["HELLO", "WORLD"]
 const uppercaseOf = function (strings) {
@@ -25,6 +29,8 @@ const uppercaseOf = function (strings) {
 
 // console.log(uppercaseOf(["a", "b", "abc"]));
 
+//-----------------------------------------------------------------------------
+
 // first characters of ["apple", "banana", "kiwi"] => ["a", "b", "k"]
 const firstCharactersOf = function (strings) {
   return strings.map(function (word) {
@@ -33,6 +39,8 @@ const firstCharactersOf = function (strings) {
 };
 
 // console.log(firstCharactersOf(["apple", "banana", "kiwi"]));
+
+//-----------------------------------------------------------------------------
 
 // truth values of [0, 1, 2, 3] => [false, true, true, true]
 // Assume non-zero numbers are true, and zero is false
@@ -44,6 +52,7 @@ const truthValuesOf = function (numbers) {
 
 // console.log(truthValuesOf([0, 1, 2, 3, -1]));
 
+//-----------------------------------------------------------------------------
 
 // reverse strings of ["hello", "world"] => ["olleh", "dlrow"]
 const reversedStringsOf = function (strings) {
@@ -52,11 +61,25 @@ const reversedStringsOf = function (strings) {
   });
 };
 
-console.log(reversedStringsOf(["hello", "world"]));
+// console.log(reversedStringsOf(["hello", "world"]));
 
+//-----------------------------------------------------------------------------
 
-// double letters of ["cat", "dog", "bat"] => ["ccaat", "ddoog", "bbaatt"]
-const doubleLettersOf = function (strings) { };
+// double letters of ["cat", "dog", "bat"] => ["ccaatt", "ddoogg", "bbaatt"]
+
+const doubleThecharacter = function (word) {
+  return [...word].map(function (char) {
+    return char.repeat(2);
+  }).join("");
+};
+
+const doubleLettersOf = function (strings) {
+  return strings.map(doubleThecharacter);
+};
+
+console.log(doubleLettersOf(["cat", "dog", "bat"]));
+
+//-----------------------------------------------------------------------------
 
 // boolean negation of [true, false, true] => [false, true, false]
 const negatedBooleansOf = function (booleans) { };
