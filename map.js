@@ -168,12 +168,19 @@ const countVowelsOf = function (strings) {
   return strings.map(removeConsonants).map(numberOfVowels);
 };
 
-console.log(countVowelsOf(["apple", "banana", "grape", "jjj"]));
+// console.log(countVowelsOf(["apple", "banana", "grape", "jjj"]));
 
 //-----------------------------------------------------------------------------
 
 // reverse arrays of [[1, 2, 3], [4, 5, 6]] => [[3, 2, 1], [6, 5, 4]]
-const reversedArraysOf = function (arrays) { };
+const reversedArraysOf = function (arrays) {
+  return arrays.map(function (array) {
+    return array.reverse();
+  });
+};
+
+console.log(reversedArraysOf([[1, 2, 3], [4, 5, 6]]));
+
 
 //-----------------------------------------------------------------------------
 
