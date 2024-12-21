@@ -202,13 +202,31 @@ const withoutVowelsOf = function (strings) {
   return strings.map(removeVowel);
 };
 
-console.log(withoutVowelsOf(["apple", "banana", "grape"]));
+// console.log(withoutVowelsOf(["apple", "banana", "grape"]));
 
 //-----------------------------------------------------------------------------
 
 // cumulative sums of [[1, 2, 3], [4, 5, 6]] => [[1, 3, 6], [4, 9, 15]]
 // Example: cumulative sum of [1, 2, 3] is [1, 1+2, 1+2+3]
-const cumulativeSumsOf = function (arrays) { };
+
+const sumOfElements = function (initialSum, number) {
+  initialSum.push(initialSum.at(-1) + number);
+
+  return initialSum;
+};
+
+const cumulativeSum = function (list) {
+  list.reduce(sumOfElements, [0]).shift();
+
+  return list;
+};
+
+const cumulativeSumsOf = function (arrays) {
+  return arrays.map(cumulativeSum);
+};
+
+console.log(cumulativeSumsOf([[1, 2, 3], [4, 5, 6]]));
+
 
 //-----------------------------------------------------------------------------
 
