@@ -243,7 +243,7 @@ const reversedWordsOf = function (strings) {
   return strings.map(reverseWords);
 };
 
-console.log(reversedWordsOf(["hello world", "goodbye moon"]));
+// console.log(reversedWordsOf(["hello world", "goodbye moon"]));
 
 
 //----------------------------------------------18------------------------------
@@ -253,43 +253,51 @@ console.log(reversedWordsOf(["hello world", "goodbye moon"]));
 // Maintain the order of their first appearance in each string
 const uniqueCharactersOf = function (strings) { };
 
-//-----------------------------------------------------------------------------
+//-----------------------------------19-----------------------------------------
 
 // generate ranges from [3, 5, 2] => [[0, 1, 2], [0, 1, 2, 3, 4], [0, 1]]
+
 const rangesOf = function (numbers) { };
 
-//-----------------------------------------------------------------------------
+//-------------------------------20---------------------------------------------
 
 // capitalize first letters of ["hello world", "goodbye moon"] 
 // => ["Hello World", "Goodbye Moon"]
 const capitalizedFirstLettersOf = function (strings) { };
 
-//-----------------------------------------------------------------------------
+//--------------------------------21--------------------------------------------
 
 // find word lengths in ["apple pie", "banana split"] => [[5, 3], [6, 5]]
 const wordLengthsOf = function (strings) { };
 
-//-----------------------------------------------------------------------------
+//---------------------------------22-------------------------------------------
 
 // flatten nested arrays of [[1, [2, 3]], [4, [5, 6]]] => [[1, 2, 3], [4, 5, 6]]
 const flattenedArraysOf = function (arrays) { };
 
-//-----------------------------------------------------------------------------
+//---------------------------------23-------------------------------------------
 
 // sort letters in ["cat", "bat", "rat"] alphabetically => ["act", "abt", "art"]
 const sortedLettersOf = function (strings) { };
 
-//-----------------------------------------------------------------------------
+//----------------------------------24------------------------------------------
 
 // wrap strings in brackets ["apple", "banana"] => ["[apple]", "[banana]"]
 const wrappedStringsOf = function (strings) { };
 
-//-----------------------------------------------------------------------------
+//-----------------------------------25-----------------------------------------
 
 // extract names from [{ name: "Alice" }, { name: "Bob" }] => ["Alice", "Bob"]
-const extractNames = function (objects) { };
+const extractNames = function (objects) {
+  return objects.map(function (element) {
+    return element.name;
+  });
+};
 
-//-----------------------------------------------------------------------------
+console.log(extractNames([{ name: "Alice" }, { name: "Bob" }]));
+
+
+//-----------------------------------26-----------------------------------------
 
 // extract ages from [{ age: 25 }, { age: 30 }] => [25, 30]
 const extractAges = function (objects) { };
