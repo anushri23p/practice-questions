@@ -23,10 +23,16 @@ const uppercaseOf = function (strings) {
   });
 };
 
-console.log(uppercaseOf(["a", "b", "abc"]));
+// console.log(uppercaseOf(["a", "b", "abc"]));
 
 // first characters of ["apple", "banana", "kiwi"] => ["a", "b", "k"]
-const firstCharactersOf = function (strings) { };
+const firstCharactersOf = function (strings) {
+  return strings.map(function (word) {
+    return word[0];
+  });
+};
+
+console.log(firstCharactersOf(["apple", "banana", "kiwi"]));
 
 // truth values of [0, 1, 2, 3] => [false, true, true, true]
 // Assume non-zero numbers are true, and zero is false
