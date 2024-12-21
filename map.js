@@ -107,7 +107,14 @@ console.log(charCodesOf(["a", "b", "c"]));
 
 // extract domain names from ["user1@gmail.com", "admin@yahoo.com"] 
 // => ["gmail.com", "yahoo.com"]
-const domainNamesOf = function (emails) { };
+const domainNamesOf = function (emails) {
+  return emails.map(function (email) {
+    return email.slice(email.indexOf("@") + 1, email.length);
+  });
+};
+
+console.log(domainNamesOf(["user1@gmail.com", "admin@yahoo.com"]));
+
 
 //-----------------------------------------------------------------------------
 
