@@ -14,10 +14,16 @@ const lengthsOf = function (strings) {
   });
 };
 
-console.log(lengthsOf(["a", "bb", "ccc", "dddd"]));
+// console.log(lengthsOf(["a", "bb", "ccc", "dddd"]));
 
 // uppercase of ["hello", "world"] => ["HELLO", "WORLD"]
-const uppercaseOf = function (strings) { };
+const uppercaseOf = function (strings) {
+  return strings.map(function (word) {
+    return word.toUpperCase();
+  });
+};
+
+console.log(uppercaseOf(["a", "b", "abc"]));
 
 // first characters of ["apple", "banana", "kiwi"] => ["a", "b", "k"]
 const firstCharactersOf = function (strings) { };
