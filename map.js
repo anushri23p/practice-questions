@@ -42,11 +42,18 @@ const truthValuesOf = function (numbers) {
   });
 };
 
-console.log(truthValuesOf([0, 1, 2, 3, -1]));
+// console.log(truthValuesOf([0, 1, 2, 3, -1]));
 
 
 // reverse strings of ["hello", "world"] => ["olleh", "dlrow"]
-const reversedStringsOf = function (strings) { };
+const reversedStringsOf = function (strings) {
+  return strings.map(function (word) {
+    return [...word].reverse().join("");
+  });
+};
+
+console.log(reversedStringsOf(["hello", "world"]));
+
 
 // double letters of ["cat", "dog", "bat"] => ["ccaat", "ddoog", "bbaatt"]
 const doubleLettersOf = function (strings) { };
