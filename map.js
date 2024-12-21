@@ -135,12 +135,18 @@ const joinedArraysOf = function (arrayOfArrays) {
   });
 };
 
-console.log(joinedArraysOf([["a", "b"], ["c", "d"]]));
+// console.log(joinedArraysOf([["a", "b"], ["c", "d"]]));
 
 //-----------------------------------------------------------------------------
 
 // repeat strings in ["hi", "bye"] => ["hihi", "byebye"]
-const repeatedStringsOf = function (strings) { };
+const repeatedStringsOf = function (strings) {
+  return strings.map(function (word) {
+    return word.repeat(2);
+  });
+};
+
+console.log(repeatedStringsOf(["hi", "bye"]));
 
 //-----------------------------------------------------------------------------
 
