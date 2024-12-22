@@ -108,11 +108,11 @@ const charCodesOf = function (strings) {
 // => ["gmail.com", "yahoo.com"]
 const domainNamesOf = function (emails) {
   return emails.map(function (email) {
-    return email.slice(email.indexOf("@") + 1, email.length);
+    return email.slice(email.indexOf("@") + 1);
   });
 };
 
-// console.log(domainNamesOf(["user1@gmail.com", "admin@yahoo.com"]));
+console.log(domainNamesOf(["user1@gmail.com", "admin@yahoo.com"]));
 
 //--------------------------------------------10--------------------------------
 
