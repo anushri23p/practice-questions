@@ -10,7 +10,7 @@ const filterEvenNumbers = function (numbers) {
 
 // console.log(filterEvenNumbers([1, 2, 3, 4, 5]));
 
-//-----------------------------------------------------------------------------
+//------------------------------1----------------------------------------------
 
 // words with more than 5 letters ["apple", "banana", "kiwi", "grape"] 
 // => ["banana"]
@@ -22,7 +22,7 @@ const filterLongWords = function (words) {
 
 // console.log(filterLongWords(["apple", "banana", "kiwi", "grape", "aaaaaaaaaa"]));
 
-//-----------------------------------------------------------------------------
+//-----------------------------2-----------------------------------------------
 
 // people older than 30 [{name: "Alice", age: 25}, {name: "Bob", age: 35}] 
 // => [{name: "Bob", age: 35}]
@@ -33,16 +33,25 @@ const filterAdults = function (people) {
   });
 };
 
-console.log(filterAdults([{ name: "Alice", age: 25 }, { name: "Bob", age: 35 }]));
+// console.log(filterAdults([{ name: "Alice", age: 25 }, { name: "Bob", age: 35 }]));
 
-//-----------------------------------------------------------------------------
+//----------------------------------4------------------------------------------
 
 // active users [{username: "alice", active: true},
 //  {username: "bob", active: false}]
 //  => [{username: "alice", active: true}]
-const filterActiveUsers = function (users) { };
 
-//-----------------------------------------------------------------------------
+const filterActiveUsers = function (users) {
+  return users.filter(function (user) {
+    return user.active;
+  });
+};
+
+console.log(filterActiveUsers([{ username: "alice", active: true },
+{ username: "bob", active: false }]));
+
+
+//---------------------------------5-------------------------------------------
 
 // numbers greater than 10 [5, 12, 7, 18, 3] => [12, 18]
 const filterNumbersGreaterThanTen = function (numbers) { };
