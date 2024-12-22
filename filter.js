@@ -20,14 +20,20 @@ const filterLongWords = function (words) {
   });
 };
 
-console.log(filterLongWords(["apple", "banana", "kiwi", "grape", "aaaaaaaaaa"]));
-
+// console.log(filterLongWords(["apple", "banana", "kiwi", "grape", "aaaaaaaaaa"]));
 
 //-----------------------------------------------------------------------------
 
 // people older than 30 [{name: "Alice", age: 25}, {name: "Bob", age: 35}] 
 // => [{name: "Bob", age: 35}]
-const filterAdults = function (people) { };
+
+const filterAdults = function (people) {
+  return people.filter(function (person) {
+    return person.age > 30;
+  });
+};
+
+console.log(filterAdults([{ name: "Alice", age: 25 }, { name: "Bob", age: 35 }]));
 
 //-----------------------------------------------------------------------------
 
