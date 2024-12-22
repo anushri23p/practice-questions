@@ -77,7 +77,7 @@ const doubleLettersOf = function (strings) {
   return strings.map(doubleThecharacter);
 };
 
-// console.log(doubleLettersOf(["cat", "dog", "bat"]));
+console.log(doubleLettersOf(["cat", "dog", "bat"]));
 
 //-----------------------------------------7------------------------------------
 
