@@ -210,9 +210,10 @@ const withoutVowelsOf = function (strings) {
 // Example: cumulative sum of [1, 2, 3] is [1, 1+2, 1+2+3]
 
 const sumOfElements = function (initialSum, number) {
-  initialSum.push(initialSum.at(-1) + number);
+  const sum = initialSum;
+  sum.push(sum.at(-1) + number);
 
-  return initialSum;
+  return sum;
 };
 
 const cumulativeSum = function (list) {
@@ -225,7 +226,7 @@ const cumulativeSumsOf = function (arrays) {
   return arrays.map(cumulativeSum);
 };
 
-// console.log(cumulativeSumsOf([[1, 2, 3], [4, 5, 6]]));
+console.log(cumulativeSumsOf([[1, 2, 3], [4, 5, 6]]));
 
 
 //---------------------------------------------17-------------------------------
