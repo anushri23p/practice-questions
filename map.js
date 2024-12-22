@@ -350,14 +350,21 @@ const calculateAreas = function (rectangles) {
   return rectangles.map(area);
 };
 
-console.log(calculateAreas([{ width: 2, height: 3 }, { width: 4, height: 5 }]));
+// console.log(calculateAreas([{ width: 2, height: 3 }, { width: 4, height: 5 }]));
 
 
 //-----------------------------------------------------------------------------
 
 // extract boolean flags from [{ active: true }, { active: false }] 
 // => [true, false]
-const extractFlags = function (objects) { };
+const extractFlags = function (objects) {
+  return objects.map(function (element) {
+    return element.active;
+  });
+};
+
+console.log(extractFlags([{ active: true }, { active: false }]));
+
 
 //-----------------------------------------------------------------------------
 
