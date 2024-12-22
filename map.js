@@ -272,7 +272,7 @@ const rangesOf = function (numbers) {
   return numbers.map(generateRange);
 };
 
-console.log(rangesOf([3, 5, 2]));
+// console.log(rangesOf([3, 5, 2]));
 
 
 //-------------------------------20---------------------------------------------
@@ -335,15 +335,23 @@ const firstLettersOfNames = function (objects) {
   });
 };
 
-console.log(firstLettersOfNames([{ name: "Alice" }, { name: "Bob" }]));
+// console.log(firstLettersOfNames([{ name: "Alice" }, { name: "Bob" }]));
 
 //--------------------------------------28--------------------------------------
 
 // calculate areas from [{ width: 2, height: 3 }, { width: 4, height: 5 }]
 //  => [6, 20]
-const calculateAreas = function (rectangles) {
-  return rectangles.map();
+
+const area = function (object) {
+  return object.width * object.height;
 };
+
+const calculateAreas = function (rectangles) {
+  return rectangles.map(area);
+};
+
+console.log(calculateAreas([{ width: 2, height: 3 }, { width: 4, height: 5 }]));
+
 
 //-----------------------------------------------------------------------------
 
