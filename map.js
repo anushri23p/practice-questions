@@ -46,7 +46,7 @@ const firstCharactersOf = function (strings) {
 // Assume non-zero numbers are true, and zero is false
 const truthValuesOf = function (numbers) {
   return numbers.map(function (number) {
-    return number !== 0 ? "true" : "false";
+    return number !== 0;
   });
 };
 
@@ -321,12 +321,13 @@ const firstLettersOfNames = function (objects) {
 
 console.log(firstLettersOfNames([{ name: "Alice" }, { name: "Bob" }]));
 
-
-//-----------------------------------------------------------------------------
+//--------------------------------------28--------------------------------------
 
 // calculate areas from [{ width: 2, height: 3 }, { width: 4, height: 5 }]
 //  => [6, 20]
-const calculateAreas = function (rectangles) { };
+const calculateAreas = function (rectangles) {
+  return rectangles.map();
+};
 
 //-----------------------------------------------------------------------------
 
