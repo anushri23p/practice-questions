@@ -47,16 +47,22 @@ const filterActiveUsers = function (users) {
   });
 };
 
-console.log(filterActiveUsers([{ username: "alice", active: true },
-{ username: "bob", active: false }]));
+// console.log(filterActiveUsers([{ username: "alice", active: true },
+// { username: "bob", active: false }]));
 
 
 //---------------------------------5-------------------------------------------
 
 // numbers greater than 10 [5, 12, 7, 18, 3] => [12, 18]
-const filterNumbersGreaterThanTen = function (numbers) { };
+const filterNumbersGreaterThanTen = function (numbers) {
+  return numbers.filter(function (number) {
+    return number > 10;
+  });
+};
 
-//-----------------------------------------------------------------------------
+console.log(filterNumbersGreaterThanTen([5, 12, 7, 18, 3]));
+
+//---------------------------------6-------------------------------------------
 
 // books with more than 200 pages [{title: "Book 1", pages: 150},
 //  {title: "Book 2", pages: 250}] 
