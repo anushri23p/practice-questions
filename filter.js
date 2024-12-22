@@ -54,6 +54,7 @@ const filterActiveUsers = function (users) {
 //---------------------------------5-------------------------------------------
 
 // numbers greater than 10 [5, 12, 7, 18, 3] => [12, 18]
+
 const filterNumbersGreaterThanTen = function (numbers) {
   return numbers.filter(function (number) {
     return number > 10;
@@ -67,14 +68,15 @@ const filterNumbersGreaterThanTen = function (numbers) {
 // books with more than 200 pages [{title: "Book 1", pages: 150},
 //  {title: "Book 2", pages: 250}] 
 // => [{title: "Book 2", pages: 250}]
+
 const filterLongBooks = function (books) {
   return books.filter(function (book) {
     return book.pages > 200;
   });
 };
 
-console.log(filterLongBooks([{ title: "Book 1", pages: 150 },
-{ title: "Book 2", pages: 250 }]));
+// console.log(filterLongBooks([{ title: "Book 1", pages: 150 },
+// { title: "Book 2", pages: 250 }]));
 
 
 //-----------------------------------7-----------------------------------------
@@ -82,7 +84,15 @@ console.log(filterLongBooks([{ title: "Book 1", pages: 150 },
 // users with incomplete profiles [{username: "alice", profileComplete: true}, 
 // {username: "bob", profileComplete: false}] 
 // => [{username: "bob", profileComplete: false}]
-const filterIncompleteProfiles = function (users) { };
+
+const filterIncompleteProfiles = function (users) {
+  return users.filter(function (user) {
+    return !user.profileComplete;
+  });
+};
+
+console.log(filterIncompleteProfiles([{ username: "alice", profileComplete: true },
+{ username: "bob", profileComplete: false }]));
 
 //-----------------------------------------------------------------------------
 
