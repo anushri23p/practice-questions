@@ -226,7 +226,7 @@ const cumulativeSumsOf = function (arrays) {
   return arrays.map(cumulativeSum);
 };
 
-console.log(cumulativeSumsOf([[1, 2, 3], [4, 5, 6]]));
+// console.log(cumulativeSumsOf([[1, 2, 3], [4, 5, 6]]));
 
 
 //---------------------------------------------17-------------------------------
@@ -258,7 +258,22 @@ const uniqueCharactersOf = function (strings) { };
 
 // generate ranges from [3, 5, 2] => [[0, 1, 2], [0, 1, 2, 3, 4], [0, 1]]
 
-const rangesOf = function (numbers) { };
+const generateRange = function (number) {
+  const range = [];
+
+  for (let index = 0; index < number; index++) {
+    range.push(index);
+  }
+
+  return range;
+};
+
+const rangesOf = function (numbers) {
+  return numbers.map(generateRange);
+};
+
+console.log(rangesOf([3, 5, 2]));
+
 
 //-------------------------------20---------------------------------------------
 
