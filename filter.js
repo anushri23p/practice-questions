@@ -60,16 +60,24 @@ const filterNumbersGreaterThanTen = function (numbers) {
   });
 };
 
-console.log(filterNumbersGreaterThanTen([5, 12, 7, 18, 3]));
+// console.log(filterNumbersGreaterThanTen([5, 12, 7, 18, 3]));
 
 //---------------------------------6-------------------------------------------
 
 // books with more than 200 pages [{title: "Book 1", pages: 150},
 //  {title: "Book 2", pages: 250}] 
 // => [{title: "Book 2", pages: 250}]
-const filterLongBooks = function (books) { };
+const filterLongBooks = function (books) {
+  return books.filter(function (book) {
+    return book.pages > 200;
+  });
+};
 
-//-----------------------------------------------------------------------------
+console.log(filterLongBooks([{ title: "Book 1", pages: 150 },
+{ title: "Book 2", pages: 250 }]));
+
+
+//-----------------------------------7-----------------------------------------
 
 // users with incomplete profiles [{username: "alice", profileComplete: true}, 
 // {username: "bob", profileComplete: false}] 
