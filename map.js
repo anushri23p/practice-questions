@@ -1,11 +1,9 @@
 // squares of [1, 2, 3] => [1, 4, 9]
 const squaresOf = function (numbers) {
-  return numbers.map(function (number) {
-    return Math.pow(number, 2);
-  });
+  return numbers.map(number => Math.pow(number, 2));
 };
 
-// console.log(squaresOf([1, 2, 3, 4]));
+console.log(squaresOf([1, 2, 3, 4]));
 
 //-----------------------------------1------------------------------------------
 
@@ -77,7 +75,7 @@ const doubleLettersOf = function (strings) {
   return strings.map(doubleThecharacter);
 };
 
-console.log(doubleLettersOf(["cat", "dog", "bat"]));
+// console.log(doubleLettersOf(["cat", "dog", "bat"]));
 
 //-----------------------------------------7------------------------------------
 
@@ -112,7 +110,7 @@ const domainNamesOf = function (emails) {
   });
 };
 
-console.log(domainNamesOf(["user1@gmail.com", "admin@yahoo.com"]));
+// console.log(domainNamesOf(["user1@gmail.com", "admin@yahoo.com"]));
 
 //--------------------------------------------10--------------------------------
 
@@ -363,7 +361,7 @@ const extractFlags = function (objects) {
   });
 };
 
-console.log(extractFlags([{ active: true }, { active: false }]));
+// console.log(extractFlags([{ active: true }, { active: false }]));
 
 
 //-------------------------------------30---------------------------------------
@@ -416,7 +414,7 @@ const extractCoordinates = function (objects) {
   return objects.map(coordinates);
 };
 
-console.log(extractCoordinates([{ x: 1, y: 2 }, { x: 3, y: 4 }]));
+// console.log(extractCoordinates([{ x: 1, y: 2 }, { x: 3, y: 4 }]));
 
 //-----------------------------------------------------------------------------
 
