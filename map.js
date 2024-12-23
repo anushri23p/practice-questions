@@ -3,18 +3,16 @@ const squaresOf = function (numbers) {
   return numbers.map(number => Math.pow(number, 2));
 };
 
-console.log(squaresOf([1, 2, 3, 4]));
+// console.log(squaresOf([1, 2, 3, 4]));
 
 //-----------------------------------1------------------------------------------
 
 // lengths of ["apple", "banana", "kiwi"] => [5, 6, 4]
 const lengthsOf = function (strings) {
-  return strings.map(function (word) {
-    return word.length;
-  });
+  return strings.map(string => string.length);
 };
 
-// console.log(lengthsOf(["a", "bb", "ccc", "dddd"]));
+console.log(lengthsOf(["a", "bb", "ccc", "dddd"]));
 
 //------------------------------------2-----------------------------------------
 
