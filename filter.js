@@ -189,7 +189,10 @@ const filterPopularPosts = function (posts) { };
 
 //-----------------------------------------------------------------------------
 
-// users who have posted more than the average number of posts [{username: "Alice", postCount: 5}, {username: "Bob", postCount: 8}, {username: "Charlie", postCount: 3}] => [{username: "Bob", postCount: 8}]
+// users who have posted more than the average number of posts 
+// [{username: "Alice", postCount: 5}, {username: "Bob", postCount: 8}, 
+// {username: "Charlie", postCount: 3}] 
+// => [{username: "Bob", postCount: 8}]
 const filterActiveUsersByPostCount = function (users) { };
 
 //-----------------------------------------------------------------------------

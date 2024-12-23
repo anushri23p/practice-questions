@@ -353,7 +353,7 @@ const calculateAreas = function (rectangles) {
 // console.log(calculateAreas([{ width: 2, height: 3 }, { width: 4, height: 5 }]));
 
 
-//-----------------------------------------------------------------------------
+//------------------------------------29----------------------------------------
 
 // extract boolean flags from [{ active: true }, { active: false }] 
 // => [true, false]
@@ -366,7 +366,7 @@ const extractFlags = function (objects) {
 console.log(extractFlags([{ active: true }, { active: false }]));
 
 
-//-----------------------------------------------------------------------------
+//-------------------------------------30---------------------------------------
 
 // concatenate first and last names from 
 // [{ firstName: "Alice", lastName: "Smith" },
