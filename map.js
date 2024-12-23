@@ -12,18 +12,16 @@ const lengthsOf = function (strings) {
   return strings.map(string => string.length);
 };
 
-console.log(lengthsOf(["a", "bb", "ccc", "dddd"]));
+// console.log(lengthsOf(["a", "bb", "ccc", "dddd"]));
 
 //------------------------------------2-----------------------------------------
 
 // uppercase of ["hello", "world"] => ["HELLO", "WORLD"]
 const uppercaseOf = function (strings) {
-  return strings.map(function (word) {
-    return word.toUpperCase();
-  });
+  return strings.map(string => string.toUpperCase());
 };
 
-// console.log(uppercaseOf(["a", "b", "abc"]));
+console.log(uppercaseOf(["a", "b", "abc"]));
 
 //-------------------------------------3----------------------------------------
 
